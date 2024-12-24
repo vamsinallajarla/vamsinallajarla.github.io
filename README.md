@@ -61,3 +61,11 @@ Projects : worked with Multi projects **
 ●	Maintained smooth operation of multi-user computer systems through collaboration with hardware and network engineers.
 ●	Worked on windows operating systems 2012 and 2016 Standard and R2 datacenter Editions 
 ●	Worked on closing the database related issues by following the SOP's.
+
+Certifications :
+         	Linux Network Administrator | Allison - CPD (Continuing Professional Development\
+	        Introduction to Ansible | Kyndryl Your Learnin\
+              	Red Hat - Ansible Essentials | Kyndryl Your Learning\
+              	Kyndryl Data Privacy Education | Kyndryl Your Learning\
+              	Kyndryl Cyber Security Education | Kyndryl Your Learning\
+
