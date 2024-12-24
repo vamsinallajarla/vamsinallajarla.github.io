@@ -69,3 +69,21 @@ Certifications :\
               	Kyndryl Data Privacy Education   | Kyndryl Your Learning\
               	Kyndryl Cyber Security Education | Kyndryl Your Learning\
 
+
+● Infrastructure Maintenance & Optimization 	● Skilled in VMware, Hyper-V for server consolidation and resource optimization.\
+● System & Network Monitoring			● Server Management\
+● Security & Auditing				● Strong knowledge of network protocols, firewall configurations, and VPN settings\
+● System Upgrades & Updates			● Proof of Concept (PoC) and Tender Support\
+● Resource Optimization				● Implementing robust security measures, including firewalls, intrusion detection systems, and regular patch management.\
+● Backup and Disaster Recovery			● Documentation & Reporting\
+● Team Coordination & Stakeholder Management	● Team Coordination & Stakeholder management.\
+● Technology Evaluation & Innovation		● Scheduling jobs using Crontab and at jobs.\
+● Update Management				● User management and Access management
+● Disk Management				● Troubleshooting system performance like CPU, Memory, Network Devices,
+● Configuring RAID’s				● Backup & Restoration support for DR(Disaster Recovery).
+● Package management for all Linux distros	● Operating System : RHEL, UBUNTU, CentOS, Windows 2012, 2016, 2019, 2022. Windows 10, 11
+
+● Scripting : Shell/Bash Scripting for Linux & Batch scripts for Windows Script management
+● Ticketing Tools : Service NOW, BMC remedy, ICD, Team Assist
+● Knowledge of AWS & cloud solutions
+● Creating and Managing the File systems
