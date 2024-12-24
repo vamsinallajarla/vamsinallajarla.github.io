@@ -1,13 +1,13 @@
 Experienced IT & Infrastructure Engineer with over 5 years of expertise in designing, implementing, and maintaining robust IT infrastructure solutions. Proficient in managing both Linux and Windows environments, ensuring optimal performance, security, and reliability. Adept at leveraging virtualization technologies, cloud platforms, and automation tools to streamline operations and enhance system efficiency.
 
 Work Experience 
-**IT & Infra Engineer  | QUIXY | Hyderabad - December  2023 - Present**
-●	Production Infrastructure Maintenance: Ensure the health and availability of production systems by monitoring, updating, and maintaining the infrastructure./
-●	Performance Optimization: Regularly review system performance and implement tuning procedures to ensure optimal performance.
-●	Capacity Planning: Forecast future infrastructure needs based on current trends and business growth. Ensure scalability to handle increased loads.
-●	Implement and manage monitoring tools to track server health, network performance, and application load.
-●	Set up real-time alerts to quickly address any performance issues or system downtime.
-●	Set up, configure, and manage load balancers to ensure application reliability and high availability.
+**IT & Infra Engineer  | QUIXY | Hyderabad - December  2023 - Present**\
+●	Production Infrastructure Maintenance: Ensure the health and availability of production systems by monitoring, updating, and maintaining the infrastructure.\
+●	Performance Optimization: Regularly review system performance and implement tuning procedures to ensure optimal performance.\
+●	Capacity Planning: Forecast future infrastructure needs based on current trends and business growth. Ensure scalability to handle increased loads.\
+●	Implement and manage monitoring tools to track server health, network performance, and application load.\
+●	Set up real-time alerts to quickly address any performance issues or system downtime.\
+●	Set up, configure, and manage load balancers to ensure application reliability and high availability.\
 ●	Assess infrastructure needs and plan the purchase of new servers as per demand for production or POCs.
 ●	Identify and remove unwanted or unused servers to optimize resource allocation and reduce costs.
 ●	Conduct routine audits and preventive maintenance for existing servers to ensure uptime and system reliability.
