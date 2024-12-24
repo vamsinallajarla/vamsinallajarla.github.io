@@ -60,7 +60,7 @@ Projects : worked with Multi projects **\
 ●	Provided 24/7 support as a NOC Engineer\
 ●	Maintained smooth operation of multi-user computer systems through collaboration with hardware and network engineers.\
 ●	Worked on windows operating systems 2012 and 2016 Standard and R2 datacenter Editions.\
-●	Worked on closing the database related issues by following the SOP's.\
+●	Worked on closing the database related issues by following the SOP's.
 
 Certifications :\
          	Linux Network Administrator      | Allison - CPD (Continuing Professional Development\
