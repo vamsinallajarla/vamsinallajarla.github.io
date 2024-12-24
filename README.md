@@ -64,11 +64,11 @@ Projects : worked with Multi projects **\
 ●	Worked on closing the database related issues by following the SOP's.
 
 Certifications :\
-         	Linux Network Administrator      | Allison - CPD (Continuing Professional Development\
-	        Introduction to Ansible 	 | Kyndryl Your Learning\
-              	Red Hat - Ansible Essentials     | Kyndryl Your Learning\
-              	Kyndryl Data Privacy Education   | Kyndryl Your Learning\
-              	Kyndryl Cyber Security Education | Kyndryl Your Learning\
+         	  Linux Network Administrator      | Allison - CPD (Continuing Professional Development\
+	          Introduction to Ansible 	 | Kyndryl Your Learning\
+      	 	  Red Hat - Ansible Essentials     | Kyndryl Your Learning\
+              	  Kyndryl Data Privacy Education   | Kyndryl Your Learning\
+              	  Kyndryl Cyber Security Education | Kyndryl Your Learning\
 
 
 ● Infrastructure Maintenance & Optimization 	● Skilled in VMware, Hyper-V for server consolidation and resource optimization.\
