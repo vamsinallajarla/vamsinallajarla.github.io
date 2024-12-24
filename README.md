@@ -2,7 +2,7 @@ Experienced IT & Infrastructure Engineer with over 5 years of expertise in desig
 
 Work Experience 
 **IT & Infra Engineer  | QUIXY | Hyderabad - December  2023 - Present**
-●	Production Infrastructure Maintenance: Ensure the health and availability of production systems by monitoring, updating, and maintaining the infrastructure.
+●	Production Infrastructure Maintenance: Ensure the health and availability of production systems by monitoring, updating, and maintaining the infrastructure./
 ●	Performance Optimization: Regularly review system performance and implement tuning procedures to ensure optimal performance.
 ●	Capacity Planning: Forecast future infrastructure needs based on current trends and business growth. Ensure scalability to handle increased loads.
 ●	Implement and manage monitoring tools to track server health, network performance, and application load.
