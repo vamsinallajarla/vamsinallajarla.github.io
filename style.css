@@ -183,7 +183,7 @@ section{
 }
 
 .typewriter span::before{
-    content: "Developer";
+    content: "System admin";
     animation: words 15s infinite;
 }
 
@@ -204,13 +204,13 @@ section{
 
 @keyframes words {
     0%, 33%{
-        content: "Developer";
+        content: "Network Admin";
     }
     34%, 66%{
-        content: "Designer";
+        content: "Infrastructure Engineer";
     }
     67%, 100%{
-        content: "Youtuber";
+        content: "IT Admin";
     }
 }
 
