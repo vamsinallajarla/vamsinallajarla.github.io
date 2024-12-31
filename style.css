@@ -188,7 +188,7 @@ section{
 }
 
 .typewriter span::after{
-    content: "";
+    content: "System Admin";
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
@@ -286,7 +286,7 @@ section{
     }
 
     .hamburg,.cancel{
-        display: block;
+        display: ;
     }
 
     .main-container .content{
