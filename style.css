@@ -184,7 +184,7 @@ section{
 
 .typewriter span::before{
     content: "System admin";
-    animation: words 15s infinite;
+    animation: words 10s infinite;
 }
 
 .typewriter span::after{
@@ -207,7 +207,7 @@ section{
         content: "Network Admin";
     }
     34%, 66%{
-        content: "Infrastructure Engineer";
+        content: "Infra Engineer";
     }
     67%, 100%{
         content: "IT Admin";
