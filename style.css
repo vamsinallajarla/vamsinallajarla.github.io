@@ -184,11 +184,11 @@ section{
 
 .typewriter span::before{
     content: "System admin";
-    animation: words 10s infinite;
+    animation: words 5s infinite;
 }
 
 .typewriter span::after{
-    content: "System Admin";
+    content: "";
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
@@ -203,13 +203,16 @@ section{
 }
 
 @keyframes words {
-    0%, 33%{
+    0%, 25%{
+        content: "System Admin";
+    }
+    26%, 50%{
         content: "Network Admin";
     }
-    34%, 66%{
+    51%, 75%{
         content: "Infra Engineer";
     }
-    67%, 100%{
+    76%, 100%{
         content: "IT Admin";
     }
 }
