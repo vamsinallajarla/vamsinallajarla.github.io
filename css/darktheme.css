@@ -1,0 +1,102 @@
+/* Dark Theme Override for Folio Template */
+body {
+  background: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+}
+
+a {
+  color: #90caf9 !important;
+}
+a:hover, a:focus {
+  color: #ffcc80 !important;
+}
+
+nav {
+  background: #1e1e1e !important;
+  box-shadow: 0px 2px 92px 0px rgba(255, 255, 255, 0.05) !important;
+}
+
+nav ul li a {
+  color: #cccccc !important;
+}
+
+.active {
+  color: #ffffff !important;
+}
+
+#about, #services, #journal, #footer {
+  background: #1a1a1a !important;
+}
+
+.section-title h2 {
+  color: #ffffff !important;
+}
+
+p, .form-control, .journal-block .journal-info .journal-txt p,
+.services-block span, .services-block .separator {
+  color: #cccccc !important;
+}
+
+.btn {
+  background: #333 !important;
+  color: #fff !important;
+}
+
+.btn:hover, .btn:focus {
+  background: #555 !important;
+  color: #fff !important;
+}
+
+#portfolio .portfolio-list .nav li {
+  color: #cccccc !important;
+}
+#portfolio .portfolio-list .nav li:hover,
+#portfolio .portfolio-list .nav li.filter-active {
+  color: #ffcc80 !important;
+}
+
+#journal-blog {
+  background: #1e1e1e !important;
+}
+
+.journal-block .journal-info .journal-txt h4 a {
+  color: #ffffff !important;
+}
+.journal-block .journal-info .journal-txt h4 a:hover {
+  color: #ffcc80 !important;
+}
+
+#footer {
+  background: #1e1e1e !important;
+}
+#footer .socials-media ul li a {
+  color: #cccccc !important;
+}
+#footer .socials-media ul li a:hover {
+  color: #ffcc80 !important;
+}
+
+#contact input, #contact textarea {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #555 !important;
+}
+
+.form-control {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border-color: #555 !important;
+}
+
+::selection {
+  background: #ffcc80 !important;
+  color: #000 !important;
+}
+::-moz-selection {
+  background: #ffcc80 !important;
+  color: #000 !important;
+}
