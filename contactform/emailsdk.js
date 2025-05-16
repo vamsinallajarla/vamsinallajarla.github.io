@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+  emailjs.init("izRXSoNBJlVjB0fVN"); // Replace with your actual EmailJS public key
 
   document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
