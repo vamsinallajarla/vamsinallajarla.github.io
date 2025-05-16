@@ -92,7 +92,7 @@
         <div class="col-lg-4">
           <div class="div-img-bg">
             <div class="about-img">
-              <img src="images/Me.JPEG" class="img-responsive" alt="me">
+              <img src="images/Me.jpeg" class="img-responsive" alt="me">
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@
     <!-- Experience Block -->
     <div class="col-12 mb-4">
       <div class="journal-info">
-        <a href="https://quixy.com/"><img src="images/quixy_Logo.png" class="img-responsive" alt="img"></a>
+        <a href="https://quixy.com/"><img src="images/Quixy_logo2.png" class="img-responsive" alt="img"></a>
     <div class="journal-txt">
       <h4><a href="https://quixy.com/">Position : Infrastructure Lead </a></h4>
       <p class="separator"></p>
@@ -352,6 +352,12 @@
           </div>
           <div class="col-lg-6">
             <form id="contact-form" class="contactForm">
+			<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+			<script>
+				(function(){
+					emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+						})();
+					</script>
               <div class="row">
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
@@ -404,10 +410,10 @@
           <li><a href="https://github.com/vamsinallajarla"><i class="ion-social-github"></i></a></li>
         </ul>
       </div>
-      <p>&copy; Copyrights All rights reserved.</p>
+     <p>&copy; Copyrights All rights reserved.</p>
 <div class="credits">
   Designed by 
-  <img src="images/sign.png" alt="Signature" style="height: 40px; vertical-align: middle;">
+  <img src="images/sign.png" alt="Signature" style="height: 30px; vertical-align: middle;">
      </div>
     </div>
   </div>
@@ -422,7 +428,12 @@
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
-  <!-- EmailJS SDK -->
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+<!-- EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <!-- Your EmailJS logic -->
