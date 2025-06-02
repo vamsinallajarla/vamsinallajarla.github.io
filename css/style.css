@@ -639,15 +639,16 @@ nav ul li a {
 }
 
 #certificates {
-  background: #f7f7f7;
+  background: #1a1a1a; /* or use #2c2c2c if you want slightly lighter */
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
+  position: relative;
 }
 
 #certificates img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #ddd;
+  border: 2px solid #444;
   transition: transform 0.3s ease;
 }
 
@@ -658,7 +659,7 @@ nav ul li a {
 
 #certificates p {
   font-size: 14px;
-  color: #292929;
+  color: #ccc;
   margin-top: 10px;
   font-weight: 500;
 }
