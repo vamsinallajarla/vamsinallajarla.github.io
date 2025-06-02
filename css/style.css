@@ -399,8 +399,10 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #portfolio {
-  position: relative;
-  padding-bottom: 50px;
+  background: #f7f7f7;
+  padding-top: 90px;
+  padding-bottom: 80px;
+  position: relative;
 }
 
 #portfolio .portfolio-list {
