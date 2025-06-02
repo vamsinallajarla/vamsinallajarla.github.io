@@ -459,12 +459,11 @@ nav ul li a {
 /*  Journal
 /*-----------------------------------------------------------------------------------*/
 
-#journal,  #journal-blog {
-  height: auto;
-  width: 100%;
-  background: #f7f7f7;
-  padding-bottom: 60px;
-  position: relative;
+#journal,  #journal-blog  {
+  background: #f7f7f7;
+  padding-top: 90px;
+  padding-bottom: 80px;
+  position: relative;
 }
 
 #journal-blog {
