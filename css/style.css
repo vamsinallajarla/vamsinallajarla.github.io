@@ -636,3 +636,28 @@ nav ul li a {
 .credits {
   font-size: 13px;
 }
+
+#certificates {
+  background: #f7f7f7;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#certificates img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+#certificates img:hover {
+  transform: scale(1.05);
+  border-color: #b8a07e;
+}
+
+#certificates p {
+  font-size: 14px;
+  color: #292929;
+  margin-top: 10px;
+  font-weight: 500;
+}
