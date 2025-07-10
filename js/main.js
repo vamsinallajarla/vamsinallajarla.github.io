@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Linux administration.", "Windows Administration", "Monitoring", "Automating tasks", "Networking.", "Cost Optimization.", "Infrastructure support.", "Cloud support"],
+      strings: ["Linux administration.", "Windows Administration", "Monitoring", "Automation", "Networking.", "Cost Optimization.", "Infrastructure support.", "Cloud support"],
       typeSpeed: 100,
       loop: true,
     });
