@@ -413,7 +413,7 @@ window.onload = function() {
         event.preventDefault(); // Prevent default form submission
         
         // Replace 'YOUR_TEMPLATE_ID' with your actual template ID from EmailJS dashboard
-        emailjs.sendForm('k5gio2h', 'template_oi3yja8', this)
+        emailjs.sendForm('service_k5gio2h', 'template_oi3yja8', this)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             document.getElementById('sendmessage').style.display = 'block';
@@ -511,6 +511,7 @@ window.onload = function() {
 </body>
 
 </html>
+
 
 
 
