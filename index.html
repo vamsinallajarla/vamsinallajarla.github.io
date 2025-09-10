@@ -407,7 +407,27 @@
 				(function(){
 					emailjs.init("8_WefvxVgo1YUJm3C"); // Replace with your actual EmailJS public key
 						})();
-					</script>
+				// ADD THIS FORM SUBMISSION HANDLER:
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        // Replace 'YOUR_TEMPLATE_ID' with your actual template ID from EmailJS dashboard
+        emailjs.sendForm('k5gio2h', 'template_oi3yja8', this)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById('sendmessage').style.display = 'block';
+            document.getElementById('errormessage').style.display = 'none';
+            document.getElementById('contact-form').reset();
+        }, function(error) {
+            console.log('FAILED...', error);
+            document.getElementById('errormessage').innerHTML = 'Message failed: ' + error.text;
+            document.getElementById('errormessage').style.display = 'block';
+            document.getElementById('sendmessage').style.display = 'none';
+        });
+    });
+}
+</script>
               <div class="row">
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
@@ -491,6 +511,7 @@
 </body>
 
 </html>
+
 
 
 
