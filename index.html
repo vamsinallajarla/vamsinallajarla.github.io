@@ -401,50 +401,74 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <form id="contact-form" class="contactForm">
-			<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-			<script>
-				(function(){
-					emailjs.init("8_WefvxVgo1YUJm3C"); // Replace with your actual EmailJS public key
-						})();
-					</script>
-              <div class="row">
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+    <form id="contact-form" class="contactForm">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            (function(){
+                emailjs.init("8_WefvxVgo1YUJm3C"); // Your public key
+            })();
+
+            // Add form submission handler
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent default form submission
+                    
+                    // Send the form using EmailJS
+                    emailjs.sendForm('k5gio2h', 'YOUR_TEMPLATE_ID', this)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        document.getElementById('sendmessage').style.display = 'block';
+                        document.getElementById('errormessage').style.display = 'none';
+                        // Reset form
+                        document.getElementById('contact-form').reset();
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        document.getElementById('errormessage').innerHTML = 'Message failed to send: ' + error.text;
+                        document.getElementById('errormessage').style.display = 'block';
+                        document.getElementById('sendmessage').style.display = 'none';
+                    });
+                });
+            }
+        </script>
+
+        <div class="row">
+            <div id="sendmessage" style="display:none;">Your message has been sent. Thank you!</div>
+            <div id="errormessage" style="display:none;"></div>
+            
+            <div class="col-lg-6">
+                <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
                     <div class="validation"></div>
-                  </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
                     <div class="validation"></div>
-                  </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
                     <div class="validation"></div>
-                  </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" placeholder="Message" required></textarea>
                     <div class="validation"></div>
-                  </div>
                 </div>
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-              </div>
-            </form>
-          </div>
+            </div>
+            
+            <div class="col-lg-12">
+                <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </form>
+</div>
   <!-- end section contact -->
 
   <!-- start section footer -->
@@ -491,6 +515,7 @@
 </body>
 
 </html>
+
 
 
 
