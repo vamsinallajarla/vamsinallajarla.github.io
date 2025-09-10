@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("izRXSoNBJlVjB0fVN"); // Replace with your actual EmailJS public key
+  emailjs.init("qvS_wcGgQ4X95KWC6"); // Replace with your actual EmailJS public key
 
   document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_grog0kp", "template_oi3yja8", this)
+    emailjs.sendForm("service_k5gio2h", "template_oi3yja8", this)
       .then(function () {
         document.getElementById("sendmessage").classList.add("show");
         document.getElementById("errormessage").classList.remove("show");
