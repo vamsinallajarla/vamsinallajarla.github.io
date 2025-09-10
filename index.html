@@ -401,70 +401,115 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <form id="contact-form" class="contactForm">
-			<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-			<script>
-				(function(){
-					emailjs.init("8_WefvxVgo1YUJm3C"); // Replace with your actual EmailJS public key
-						})();
-				// ADD THIS FORM SUBMISSION HANDLER:
-window.onload = function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+    <form id="contact-form" class="contactForm">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            (function(){
+                emailjs.init("8_WefvxVgo1YUJm3C"); // Your EmailJS public key
+            })();
+
+            let isSubmitting = false;
+
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent default form submission
+                    
+                    // Prevent multiple rapid submissions
+                    if (isSubmitting) {
+                        document.getElementById('errormessage').innerHTML = 'Please wait, message is being sent...';
+                        document.getElementById('errormessage').style.display = 'block';
+                        return;
+                    }
+                    
+                    // Basic form validation
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const subject = document.getElementById('subject').value.trim();
+                    const message = document.querySelector('textarea[name="message"]').value.trim();
+                    
+                    if (!name || !email || !subject || !message) {
+                        document.getElementById('errormessage').innerHTML = 'Please fill in all required fields.';
+                        document.getElementById('errormessage').style.display = 'block';
+                        return;
+                    }
+                    
+                    isSubmitting = true;
+                    const submitBtn = document.querySelector('input[type="submit"]');
+                    submitBtn.disabled = true;
+                    submitBtn.value = 'Sending...';
+                    
+                    // Hide any previous messages
+                    document.getElementById('sendmessage').style.display = 'none';
+                    document.getElementById('errormessage').style.display = 'none';
+                    
+                    // Send email using your correct service and template IDs
+                    emailjs.sendForm('service_k5gio2h', 'template_oi3yja8', this)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        document.getElementById('sendmessage').style.display = 'block';
+                        document.getElementById('contact-form').reset();
+                        
+                        // Reset form state after 3 seconds
+                        setTimeout(() => {
+                            isSubmitting = false;
+                            submitBtn.disabled = false;
+                            submitBtn.value = 'Send message';
+                        }, 3000);
+                        
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        document.getElementById('errormessage').innerHTML = 'Message failed to send. Please try again later.';
+                        document.getElementById('errormessage').style.display = 'block';
+                        
+                        // Reset form state after 5 seconds on error
+                        setTimeout(() => {
+                            isSubmitting = false;
+                            submitBtn.disabled = false;
+                            submitBtn.value = 'Send message';
+                        }, 5000);
+                    });
+                });
+            }
+        </script>
         
-        // Replace 'YOUR_TEMPLATE_ID' with your actual template ID from EmailJS dashboard
-        emailjs.sendForm('service_k5gio2h', 'template_oi3yja8', this)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            document.getElementById('sendmessage').style.display = 'block';
-            document.getElementById('errormessage').style.display = 'none';
-            document.getElementById('contact-form').reset();
-        }, function(error) {
-            console.log('FAILED...', error);
-            document.getElementById('errormessage').innerHTML = 'Message failed: ' + error.text;
-            document.getElementById('errormessage').style.display = 'block';
-            document.getElementById('sendmessage').style.display = 'none';
-        });
-    });
-}
-</script>
-              <div class="row">
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+        <div class="row">
+            <div id="sendmessage" style="display:none; color: green; margin-bottom: 15px; padding: 10px; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px;">Your message has been sent. Thank you!</div>
+            <div id="errormessage" style="display:none; color: red; margin-bottom: 15px; padding: 10px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px;"></div>
+            
+            <div class="col-lg-6">
+                <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
                     <div class="validation"></div>
-                  </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
                     <div class="validation"></div>
-                  </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
                     <div class="validation"></div>
-                  </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" placeholder="Message" required></textarea>
                     <div class="validation"></div>
-                  </div>
                 </div>
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-              </div>
-            </form>
-          </div>
+            </div>
+            
+            <div class="col-lg-12">
+                <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </form>
+</div>
   <!-- end section contact -->
 
   <!-- start section footer -->
@@ -511,6 +556,7 @@ window.onload = function() {
 </body>
 
 </html>
+
 
 
 
