@@ -585,22 +585,28 @@ nav ul li a {
   background: #f7f7f7;
   padding-top: 50px;
   padding-bottom: 50px;
+  text-align: center; /* Center all text inside footer */
 }
 
 #footer .socials-media {
   width: 100%;
+  margin-bottom: 20px;
+  /* center the socials list container */
+  text-align: center;
 }
 
 #footer .socials-media ul {
   display: inline-block;
   float: none;
-  margin: 0 0 20px 0;
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
 }
 
 #footer .socials-media ul li {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  float: none; /* remove float left */
+  display: inline-block; /* display inline-block instead */
+  margin: 0 10px;
 }
 
 #footer .socials-media ul li a {
@@ -610,32 +616,27 @@ nav ul li a {
   font-weight: 500;
   background: transparent;
   text-transform: uppercase;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
 
 #footer .socials-media ul li a:hover {
   color: #b8a07e;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
 }
 
+/* Center the copyright paragraph and credits */
 #footer p {
   font-size: 12px;
   letter-spacing: 0.1em;
   font-weight: 500;
   margin-top: 0;
   text-transform: uppercase;
+  text-align: center; /* center text */
 }
 
 .credits {
   font-size: 13px;
+  text-align: center; /* center credits */
+  margin-top: 10px;
 }
 
 #certificates {
@@ -663,3 +664,4 @@ nav ul li a {
   margin-top: 10px;
   font-weight: 500;
 }
+
