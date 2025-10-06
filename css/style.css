@@ -240,7 +240,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  background: url("../images/Blue White Modern Artificial Intelligence Video.gif") repeat scroll center center / cover;
+  background: url("../BG.jpg") repeat scroll center center / cover;
   height: 100vh;
   width: 100%;
 }
@@ -664,4 +664,5 @@ nav ul li a {
   margin-top: 10px;
   font-weight: 500;
 }
+
 
